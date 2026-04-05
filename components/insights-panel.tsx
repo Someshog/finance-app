@@ -56,7 +56,7 @@ export const InsightsPanel = () => {
           <PieChart className="size-4 text-blue-500" />
         </CardHeader>
         <CardContent>
-          <div className="text-2xl font-bold italic">
+          <div className="text-2xl font-bold">
             {highestSpendingCategory ? highestSpendingCategory.name : "N/A"}
           </div>
           <p className="text-xs text-muted-foreground">
