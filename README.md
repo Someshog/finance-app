@@ -14,18 +14,19 @@ A clean, modern, and responsive finance dashboard built with **Next.js**, **Shad
 - **💡 Financial Insights**: Automatic calculation of top spending categories, savings rates, and month-over-month growth.
 - **🎨 Premium UI/UX**: 
   - 🌙 Native Dark & Light mode support.
-  - ✨ Smooth entrance animations with Framer Motion.
+  - ✨ Smooth entrance animations with **Tailwind CSS**.
   - 📱 Fully responsive, mobile-first design.
 
 ## 🛠️ Tech Stack
 
-- **Framework**: [Next.js 14](https://nextjs.org/)
+- **Framework**: [Next.js 15](https://nextjs.org/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 - **UI Components**: [Shadcn UI](https://ui.shadcn.com/)
 - **State Management**: [Zustand](https://github.com/pmndrs/zustand)
 - **Data Fetching**: [TanStack Query](https://tanstack.com/query)
 - **Database (ORM)**: [Drizzle ORM](https://orm.drizzle.team/)
 - **Authentication**: [Clerk](https://clerk.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
 
 ## 🏁 Getting Started
 
@@ -57,9 +58,33 @@ npm run db:push
 ### 4. Run Locally
 ```bash
 npm run dev
+```bash
+npm run dev
 ```
 
-## 📐 Design Decisions
+## 📖 How to Use
+
+### 1. Create your Account
+The application uses **Clerk** for secure authentication. On the first launch, you will be prompted to sign up. Once registered, you will have your own private dashboard.
+
+### 2. Initial Setup
+Before adding transactions, head over to the **Categories** and **Accounts** sections in the sidebar:
+- **Categories**: Create labels like "Food", "Transport", or "Rent".
+- **Accounts**: Add your bank accounts or credit cards (e.g., "Main Savings", "Credit Card").
+
+### 3. Adding Transactions
+You have two ways to populate your history:
+- **Manual**: Click **Add new** on the Transactions page to fill out a single entry.
+- **Bulk Import**: Click **Import** to upload an **XLSX**, **XLS**, or **CSV** file. The intelligent mapper will help you link your spreadsheet columns to the dashboard fields.
+
+### 4. Categorizing & Notes
+After importing, you can click on any transaction to:
+- Assign a specific **Category**.
+- Add detailed **Notes** for future reference.
+- Change the **Account** it belongs to.
+
+### 5. Review Insights
+Use the main dashboard to view your net balance, income/expense trends, and a breakdown of spending by category across different time periods.
 
 - **Defensive Components**: Generic UI components (like `DataTable`) include safety checks to prevent crashes when specific columns are missing.
 - **XLSX Integration**: Leveraged `xlsx` (SheetJS) to provide robust Excel parsing, overcoming standard CSV data type limitations.

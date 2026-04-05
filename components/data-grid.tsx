@@ -1,8 +1,7 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
-import { FaPiggyBank } from "react-icons/fa";
-import { FaArrowTrendUp, FaArrowTrendDown } from "react-icons/fa6";
+import { PiggyBank, TrendingDown, TrendingUp } from "lucide-react";
 
 import { useGetSummary } from "@/features/summary/api/use-get-summary";
 import { formatDateRange } from "@/lib/utils";
@@ -32,7 +31,7 @@ export const DataGrid = () => {
         title="Remaining"
         value={data?.remainingAmount}
         percentageChange={data?.remainingChange}
-        icon={FaPiggyBank}
+        icon={PiggyBank}
         variant="default"
         dateRange={dateRangeLabel}
       />
@@ -41,7 +40,7 @@ export const DataGrid = () => {
         title="Income"
         value={data?.incomeAmount}
         percentageChange={data?.incomeChange}
-        icon={FaArrowTrendUp}
+        icon={TrendingUp}
         variant="success"
         dateRange={dateRangeLabel}
       />
@@ -50,7 +49,7 @@ export const DataGrid = () => {
         title="Expenses"
         value={data?.expensesAmount}
         percentageChange={data?.expensesChange}
-        icon={FaArrowTrendDown}
+        icon={TrendingDown}
         variant="danger"
         dateRange={dateRangeLabel}
       />

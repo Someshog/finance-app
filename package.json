@@ -1,5 +1,5 @@
 {
-  "name": "finance-dashboard",
+  "name": "finance-app",
   "version": "1.0.1",
   "private": true,
   "scripts": {
@@ -13,9 +13,8 @@
     "db:studio": "drizzle-kit studio"
   },
   "author": {
-    "name": "Sanidhya Kumar Verma",
-    "email": "sanidhya.verma12345@gmail.com",
-    "url": "https://github.com/sanidhyy"
+    "name": "Somesh",
+    "url": "https://github.com/Someshog"
   },
   "description": "Track your income and expenses with Finance.",
   "keywords": [
@@ -62,23 +61,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sanidhyy/finance-dashboard.git"
+    "url": "https://github.com/Someshog/finance-app.git"
   },
-  "homepage": "https://github.com/sanidhyy/finance-dashboard#readme",
+  "homepage": "https://github.com/Someshog/finance-app#readme",
   "bugs": {
-    "url": "https://github.com/sanidhyy/finance-dashboard/issues",
-    "email": "sanidhya.verma12345@gmail.com"
+    "url": "https://github.com/Someshog/finance-app/issues"
   },
-  "funding": [
-    {
-      "type": "patreon",
-      "url": "https://www.patreon.com/sanidhy"
-    },
-    {
-      "type": "Buy me a coffee",
-      "url": "https://www.buymeacoffee.com/sanidhy"
-    }
-  ],
   "dependencies": {
     "@clerk/backend": "^3.2.4",
     "@clerk/nextjs": "^7.0.8",
@@ -104,7 +92,6 @@
     "date-fns": "^4.1.0",
     "drizzle-orm": "^0.30.10",
     "drizzle-zod": "^0.5.1",
-    "framer-motion": "^12.38.0",
     "hono": "^4.11.9",
     "lucide-react": "^0.564.0",
     "next": "15.5.10",
@@ -116,8 +103,6 @@
     "react-day-picker": "^8.10.1",
     "react-dom": "^19.2.4",
     "react-hook-form": "^7.71.1",
-    "react-icons": "^5.5.0",
-    "react-papaparse": "^4.4.0",
     "react-select": "^5.10.2",
     "react-use": "^17.6.0",
     "recharts": "^2.15.4",

@@ -1,4 +1,4 @@
-import { type IconType } from "react-icons";
+import { LucideIcon } from "lucide-react";
 import { cva, type VariantProps } from "class-variance-authority";
 
 import {
@@ -30,10 +30,10 @@ const boxVariant = cva("shrink-0 rounded-md p-3", {
 const iconVariant = cva("size-6", {
   variants: {
     variant: {
-      default: "fill-blue-500",
-      success: "fill-emerald-500",
-      danger: "fill-rose-500",
-      warning: "fill-yellow-500",
+      default: "text-blue-500",
+      success: "text-emerald-500",
+      danger: "text-rose-500",
+      warning: "text-yellow-500",
     },
   },
   defaultVariants: {
@@ -46,7 +46,7 @@ type IconVariants = VariantProps<typeof iconVariant>;
 
 type DataCardProps = BoxVariants &
   IconVariants & {
-    icon: IconType;
+    icon: LucideIcon;
     title: string;
     value?: number;
     dateRange: string;
